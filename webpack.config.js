@@ -8,15 +8,15 @@ module.exports = {
     filename: "[name].js"
   },
   module: {
-  	loaders: [
-  	{
-  		loader: 'babel',
-  		query: {
-  			presets: ['es2015']
-  		},
-  		test: /\ljs$/,
-  		exclude: /node_modules/
-  	}
-  	]
+    loaders: [
+      {
+        loader: 'babel',
+        query: {
+          presets: ['es2015']
+        },
+        test: /\.js$/,
+        exclude: /node_modules/
+      }
+    ]
   }
 }
